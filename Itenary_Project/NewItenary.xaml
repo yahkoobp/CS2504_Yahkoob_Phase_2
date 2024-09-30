@@ -1,0 +1,38 @@
+﻿<Window x:Class="Itenary_Project.NewItenary"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Itenary_Project"
+        mc:Ignorable="d"
+        Title="NewItenary" Height="450" Width="800" Closing="Window_Closing">
+    <Grid Background="teal">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" Text="Id"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="29"/>
+        <TextBox x:Name="txtId" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Width="178" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Time"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="29"/>
+        <TextBox x:Name="txtTime" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap"   Width="178" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Itenary"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtItenary" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap"  Width="178" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Description"  RenderTransformOrigin="0.028,0.044"/>
+        <TextBox x:Name="txtDescription" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap"   Width="179" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+        <TextBlock Grid.Row="4" TextWrapping="Wrap" Text="Price" Grid.Column="0" />
+        <TextBox x:Name="txtPrice" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" Width="181" RenderTransformOrigin="0.508,1.209" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnCreate" Content="Create Itenary"
+                Grid.Row="5" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="84" Height="28"/>
+
+
+    </Grid>
+</Window>
