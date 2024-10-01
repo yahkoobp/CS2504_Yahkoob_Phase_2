@@ -12,22 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Itenary_Project
+namespace FullNameProject
 {
     /// <summary>
-    /// Interaction logic for EditItenary.xaml
+    /// Interaction logic for EditFullNameWindow.xaml
     /// </summary>
-    public partial class EditItenary : Window
+    public partial class EditFullNameWindow : Window
     {
-        public EditItenary()
+        public EditFullNameWindow()
         {
             InitializeComponent();
-            DataContext = ItenaryConfig.VueModel;
-        }
-
-        public void WindowClose()
-        {
-            this.Hide();
+            this.DataContext = FullNameConfig.VueModel;
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

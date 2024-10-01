@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F79423A6-E0B3-41D6-AD2D-D9D9674C994D}</ProjectGuid>
+    <ProjectGuid>{4C929B94-ABA5-423E-8CDF-AEF7F03FEC4B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Itenary_Project</RootNamespace>
-    <AssemblyName>Itenary_Project</AssemblyName>
+    <RootNamespace>FullNameProject</RootNamespace>
+    <AssemblyName>FullNameProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,12 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FullNameConfig.cs" />
     <Compile Include="RelayCommand.cs" />
-    <Page Include="EditItenary.xaml">
+    <Page Include="EditFullNameWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ItenaryList.xaml">
+    <Page Include="FullNameWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -68,25 +69,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="EditItenary.xaml.cs">
-      <DependentUpon>EditItenary.xaml</DependentUpon>
+    <Compile Include="EditFullNameWindow.xaml.cs">
+      <DependentUpon>EditFullNameWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ItenaryConfig.cs" />
-    <Compile Include="Itenary.cs" />
-    <Compile Include="ItenaryList.xaml.cs">
-      <DependentUpon>ItenaryList.xaml</DependentUpon>
+    <Compile Include="FullNameWindow.xaml.cs">
+      <DependentUpon>FullNameWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="NewItenary.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ItenaryViewModel.cs" />
-    <Compile Include="NewItenary.xaml.cs">
-      <DependentUpon>NewItenary.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="PersonModel.cs" />
+    <Compile Include="PersonViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

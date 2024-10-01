@@ -23,6 +23,7 @@ namespace Itenary_Project
         public ItenaryList()
         {
             InitializeComponent();
+            this.DataContext = ItenaryConfig.VueModel;
         }
         private void Window_Closed(object sender, EventArgs e)
         {
@@ -31,12 +32,25 @@ namespace Itenary_Project
 
         private void btNew_Click(object sender, RoutedEventArgs e)
         {
-            FormConfig.frmNewItenary.Show();
+            ItenaryConfig.FrmNewIternary.Show();
+            NewItenary newIternaryWindow = (NewItenary)ItenaryConfig.FrmNewIternary;
+            ItenaryConfig.VueModel.NewWindowClose = newIternaryWindow.WindowClose;
         }
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
-            FormConfig.frmEdit.Show();
+            if (grdItenary.SelectedIndex == -1)
+            {
+                var result = MessageBox.Show(messageBoxText: "Please select iternary to edit",
+                    caption: "Alert",
+                    button: MessageBoxButton.OK,
+                    icon: MessageBoxImage.Information);
+                return;
+            }
+            ItenaryConfig.FrmEditIternary.Show();
+            EditItenary editIternaryWindow = (EditItenary)ItenaryConfig.FrmEditIternary;
+            ItenaryConfig.VueModel.EditWindowClose = editIternaryWindow.WindowClose;
         }
     }
 }
+

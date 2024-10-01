@@ -22,6 +22,11 @@ namespace Itenary_Project
         public NewItenary()
         {
             InitializeComponent();
+            this.DataContext = ItenaryConfig.VueModel;
+        }
+        public void WindowClose()
+        {
+            this.Hide();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
