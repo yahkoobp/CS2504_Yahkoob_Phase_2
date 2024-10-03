@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FullNameProject"
         mc:Ignorable="d"
-        Title="EditFullNameWindow" Height="450" Width="800" Closing="Window_Closing">
+        Title="EditFullNameWindow" Height="450" Width="800" Closing="Window_Closing" Background="teal" Foreground="white"  FontWeight="bold">
+    
     <Canvas>
         <TextBlock Canvas.Left="244" TextWrapping="Wrap" Text="First Name" Canvas.Top="115" Height="29" Width="95"/>
-        <TextBox Canvas.Left="384" TextWrapping="Wrap" Text="{Binding EditablePerson.FirstName}" Canvas.Top="116" Height="29" Width="95" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.796,1.294"/>
+        <TextBox Canvas.Left="384" TextWrapping="Wrap" Text="{Binding EditablePerson.FirstName}" Canvas.Top="116" Height="29" Width="245" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.796,1.294"/>
         <TextBlock Canvas.Left="245" TextWrapping="Wrap" Text="Last Name" Canvas.Top="156" Height="29" Width="95" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox Canvas.Left="384" TextWrapping="Wrap" Text="{Binding EditablePerson.LastName}" Canvas.Top="156" Height="29" Width="95" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Content="Update" Canvas.Left="256" Canvas.Top="213" HorizontalAlignment="Left" VerticalAlignment="Top" Width="57" Command="{Binding UpdateCommand}"/>
+        <TextBox Canvas.Left="384" TextWrapping="Wrap" Text="{Binding EditablePerson.LastName}" Canvas.Top="156" Height="29" Width="241" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Content="Update" Canvas.Left="256" Canvas.Top="213" HorizontalAlignment="Left" VerticalAlignment="Top" Width="209" Command="{Binding UpdateCommand}" Height="49"/>
 
     </Canvas>
 </Window>

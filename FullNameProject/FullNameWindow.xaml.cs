@@ -33,6 +33,9 @@ namespace FullNameProject
             FullNameConfig.VueModel.EditablePerson = FullNameConfig.VueModel.EditablePerson;
             FullNameConfig.FrmEditFullName.Show();
 
+            EditFullNameWindow editFullNameWindow = (EditFullNameWindow)FullNameConfig.FrmEditFullName;
+            FullNameConfig.VueModel.EditWindowClose = editFullNameWindow.WindowClose;
+
         }
 
         private void Window_Closed(object sender, EventArgs e)

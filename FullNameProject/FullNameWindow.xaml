@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FullNameProject"
         mc:Ignorable="d"
-        Title="Full Name" Height="450" Width="800" Closed="Window_Closed">
+        Title="Full Name" Height="450" Width="800" Closed="Window_Closed" FontWeight="bold" Background="teal" Foreground="white">
     <Canvas>
-        <TextBlock Canvas.Left="244" TextWrapping="Wrap" Text="First Name" Canvas.Top="115" Height="29" Width="95"/>
-        <TextBlock x:Name="txtFirstName" Text="{Binding Person.FirstName}" Canvas.Left="384" TextWrapping="Wrap"  Canvas.Top="116" Height="29" Width="95" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.796,1.294"/>
-        <TextBlock Canvas.Left="245" TextWrapping="Wrap" Text="Last Name" Canvas.Top="156" Height="29" Width="95" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBlock Canvas.Left="384" Text="{Binding Person.LastName}" TextWrapping="Wrap" Canvas.Top="156" Height="29" Width="95" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button x:Name="btnEdit" Content="Edit" Canvas.Left="256" Canvas.Top="213" HorizontalAlignment="Left" VerticalAlignment="Top" Width="57" Click="btnEdit_Click" />
+        <TextBlock Canvas.Left="307" TextWrapping="Wrap" Text="First Name" Canvas.Top="141" Height="29" Width="95"/>
+        <TextBlock x:Name="txtFirstName" Text="{Binding Person.FirstName}" Canvas.Left="447" TextWrapping="Wrap"  Canvas.Top="142" Height="29" Width="95" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.796,1.294"/>
+        <TextBlock Canvas.Left="308" TextWrapping="Wrap" Text="Last Name" Canvas.Top="182" Height="29" Width="95" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Canvas.Left="447" Text="{Binding Person.LastName}" TextWrapping="Wrap" Canvas.Top="182" Height="29" Width="95" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnEdit" Content="Edit" Canvas.Left="319" Canvas.Top="239" HorizontalAlignment="Left" VerticalAlignment="Top" Width="155" Click="btnEdit_Click" Height="38" Background="white" Foreground="black"
+                FontWeight="bold"/>
 
     </Canvas>
 </Window>

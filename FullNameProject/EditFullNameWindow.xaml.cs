@@ -25,6 +25,11 @@ namespace FullNameProject
             this.DataContext = FullNameConfig.VueModel;
         }
 
+        public void WindowClose()
+        {
+            this.Hide();
+        }
+
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             e.Cancel = true;
