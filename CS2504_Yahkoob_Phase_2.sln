@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullNameProject", "FullName
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouterApp", "CouterApp\CouterApp.csproj", "{2DD66856-8A42-4ECF-B641-A7BDC36035FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditorAppProject", "EditorAppProject\EditorAppProject.csproj", "{CD77A784-DD20-4FBF-8C87-BAC2BD89FA33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{2DD66856-8A42-4ECF-B641-A7BDC36035FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DD66856-8A42-4ECF-B641-A7BDC36035FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DD66856-8A42-4ECF-B641-A7BDC36035FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD77A784-DD20-4FBF-8C87-BAC2BD89FA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD77A784-DD20-4FBF-8C87-BAC2BD89FA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD77A784-DD20-4FBF-8C87-BAC2BD89FA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD77A784-DD20-4FBF-8C87-BAC2BD89FA33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
